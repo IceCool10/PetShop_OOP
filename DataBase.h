@@ -12,21 +12,18 @@ class DataBase
 {
     private:
         vector <User*> Admins;
-        DataBase(){}        //Singleton?
+        DataBase(){}
     public:
         ~DataBase();
         void Add_New_User(User* X);
         int Search_for(UserAttempt* X, int& ind);
         friend void New_User(User* X, DataBase Y);
         User* Get_User(int indice);
-
-        //Singleton???
         static DataBase * create()
         {
             static DataBase obj;
             return &obj;
         }
-
 };
 
 #endif // DATABASE_H
