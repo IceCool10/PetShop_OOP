@@ -30,7 +30,7 @@ void DataBase::Add_New_User(User* X)
     Admins.push_back(X);
 }
 
-//verifica daca un User in vectorul Useri si, in caz ca il gaseste, retine indicele la care l-a gasit
+//verifica daca un User exista in vectorul Useri si, in caz ca il gaseste, retine indicele la care l-a gasit
 int DataBase::Search_for(UserAttempt* X, int &ind)
 {
     int i;
