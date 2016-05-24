@@ -12,7 +12,7 @@ class DataBase
 {
     private:
         vector <User*> Admins;
-        DataBase(){}
+        DataBase();
         DataBase(DataBase const&);
         void operator=(DataBase const&);
         static DataBase* instance;
